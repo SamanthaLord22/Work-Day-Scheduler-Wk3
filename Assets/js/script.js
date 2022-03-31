@@ -9,8 +9,6 @@ let time2 = $("#2pm")
 let time3 = $("#3pm")
 let time4 = $("#4pm")
 let time5 = $("#5pm")
-
-let timeArray = [time9, time10, time11, time12, time1, time2, time3, time4, time5]
 let newInput = $("#text-new")
 let times = moment().hours();
 let newText;
@@ -30,6 +28,7 @@ $(".btn").click(function() {
     newInput.append('<li>' + dayPlanner + '</li>');   
 });
 
+//change color depending on past, present, future
 $(".form-control").each(function() {
     let schedule = parseInt($(this).attr("id"));
     if (schedule !== times) {
