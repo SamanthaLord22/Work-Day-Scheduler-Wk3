@@ -7,3 +7,4 @@ Deployed live URL:
 https://samanthalord22.github.io/Work-Day-Scheduler-Wk3/
 
 Screenshot of live web page:
+./Assets/screenshot3.png
