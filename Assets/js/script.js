@@ -30,3 +30,21 @@ $(".btn").click(function() {
     newInput.append('<li>' + dayPlanner + '</li>');   
 });
 
+$(".form-control").each(function() {
+    let schedule = parseInt($(this).attr("id"));
+    if (schedule !== times) {
+        $(this).addClass("past")
+        $(this).removeClass("present")
+        $(this).removeClass("future")
+    }
+    if (schedule === times) {
+        $(this).removeClass("past")
+        $(this).addClass("present")
+        $(this).removeClass("future")
+    } else {
+        $(this).removeClass("past")
+        $(this).removeClass("present")
+        $(this).addClass("future")
+    }
+})
+
